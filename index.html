@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Borrega</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1500" data-aos-offset="0">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-items hide">
+            <!-- remove link class -->
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#skills">Skills</a>
+            <a class="link" href="#projects">Projects</a>
+            <a class="link" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <!-- <img src="./images/computer.png" alt="Computer"> -->
+        <div class="headings">
+            <h1 data-aos="fade-up">Hello, Carlos here</h1>
+            <h2 data-aos="fade-up" data-aos-delay="600">I'm a Front-End Web Developer</h2>
+            <h3 data-aos="fade-up" data-aos-delay="1200">I code clean, efficient, and responsive websites</h3>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-info">
+            <div class="about-image"></div>
+            <div class="about-description">
+                <p>TEST
+                </p>
+                <button>Download my Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>My Skills</h3>
+        <ul class="list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h3>My Projects</h3>
+        <ul class="list">
+            <li><a class="link" href="">1. Project</a></li>
+            <li><a class="link" href="">2. Project</a></li>
+            <li><a class="link" href="">3. Project</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h3 class="title">Get In Touch!</h3>
+            <ul class="list">
+                <li><a href="https://www.linkedin.com/in/carlosborrega/"><i
+                            class="fa-brands fa-linkedin-in"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/borregaio"><i class="fa-brands fa-github"></i>Github</a>
+                </li>
+                <li><a href="mailto:c.borrega@proton.me"><i class="fa-solid fa-paper-plane"></i>Email</a>
+                </li>
+            </ul>
+        </div>
+
+        <footer>
+            <h5>© Carlos Borrega 2024</h5>
+        </footer>
+    </section>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bb8d2ebf9e.js" crossorigin="anonymous"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            disable: 'mobile'
+        });
+    </script>
+    <!-- Script -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

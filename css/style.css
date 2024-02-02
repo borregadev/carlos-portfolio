@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;500;600;700&family=Rubik:wght@500;600;700;800;900&display=swap');
+
+:root {
+    --color0: #ffffff;
+    --color1: #ff0072;
+    --color2: #0077ff;
+    --color3: #212427;
+    --color4: #6729ff;
+}
+
+
+/* General styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(300deg, var(--color1), var(--color2));
+    background-size: 120% 120%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+h1,
+h2,
+h3,
+h5,
+p {
+    color: var(--color0);
+}
+
+#home,
+#about,
+#skills,
+#projects {
+    height: 100vh;
+    align-items: center;
+}
+
+#skills,
+#projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#skills h3,
+#projects h3,
+#contact h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color0);
+    font-weight: 700;
+    position: relative;
+}
+
+/* a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    border-radius: 4px;
+    background-color: var(--color0);
+    bottom: -10px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+} */
+
+
+/* Scroller */
+
+/* #scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+#scroller section {
+    scroll-snap-align: start;
+} */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    top: 70px;
+}
+
+nav a {
+    /* it was 50px before */
+    margin: 0 100px;
+    transition: background-color 0.3s;
+}
+
+.menu-icon {
+    display: none;
+    color: var(--color0);
+    font-size: 30px;
+}
+
+
+/* Home */
+
+#home {
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+    justify-content: center;
+}
+
+/* #home img {
+    width: 100%;
+} */
+
+.headings {
+    text-align: center;
+    color: var(--color0);
+}
+
+.headings h1 {
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+.headings h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.headings h3 {
+    font-size: 20px;
+}
+
+
+/* About */
+
+#about {
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 80%;
+    width: 90%;
+}
+
+.about-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/profile.png);
+    border-radius: 25px 0 0 25px;
+    align-items: center;
+}
+
+.about-description {
+    background-color: var(--color0);
+    border-radius: 0 25px 25px 0;
+    padding: 70px;
+}
+
+.about-description p {
+    text-align: justify;
+    color: var(--color3);
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    color: var(--color0);
+    background-color: var(--color4);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Skills */
+
+.list {
+    list-style-type: none;
+}
+
+#skills .list li,
+#projects .list li {
+    color: var(--color0);
+    font-size: 30px;
+    padding: 30px 0;
+    font-weight: 700;
+}
+
+
+/* Projects */
+
+#projects .list li {
+    font-size: 70px;
+}
+
+
+/* Contact */
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: 90vh;
+}
+
+i {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+#contact .list li {
+    margin: 50px 0;
+}
+
+#contact .list li a {
+    font-size: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    height: 10vh;
+    text-align: center;
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        /* background: #0077ff; */
+        padding: 40px;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    #scroller section {
+        scroll-snap-align:unset;
+    }
+
+    nav {
+        top: 30px;
+    }
+
+    #home {
+        /* align-items: start; */
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        height: fit-content;
+        align-items: start;
+    }
+
+    #home .headings {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #home img,
+    .headings h1,
+    .headings h2 {
+        justify-content: center;
+        display: inline;
+    }
+
+
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav a {
+        margin-bottom: 20px;
+        text-align: right;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-bottom: 20px;
+        margin-right: 50px;
+
+    }
+
+    .menu-items.show,
+    .menu-items.hide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu-items.show a {
+        opacity: 1;
+    }
+
+    .about-info {
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+    }
+
+    .about-image {
+        border-radius: 25px 25px 0 0;
+    }
+
+    .about-description {
+        border-radius: 0 0 25px 25px;
+    }
+
+    #skills {
+        grid-template-columns: auto;
+        grid-template-rows: 20% 80%;
+    }
+
+    #skills li {
+        text-align: center;
+    }
+
+    #projects {
+        grid-template-columns: auto;
+        grid-template-rows: 20% 80%;
+    }
+
+    .list {
+        text-align: center;
+    }
+
+    .contact-info {
+        grid-template-columns: auto;
+        grid-template-rows: 20% 60%;
+    }
+
+}
