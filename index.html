@@ -7,7 +7,7 @@
     <title>Carlos Borrega</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -16,10 +16,10 @@
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <div class="menu-items hide">
             <!-- remove link class -->
-            <a class="link" href="#about">About</a>
-            <a class="link" href="#skills">Skills</a>
-            <a class="link" href="#projects">Projects</a>
-            <a class="link" href="#contacts">Contacts</a>
+            <a class="link" href="#about">ABOUT</a>
+            <a class="link" href="#skills">SKILLS</a>
+            <a class="link" href="#projects">PROJECTS</a>
+            <a class="link" href="#contact">CONTACT</a>
         </div>
     </nav>
 
@@ -33,19 +33,30 @@
     </section>
 
     <section id="about">
-        <div class="about-info">
+        <div data-aos="fade-up" class="about-info">
             <div class="about-image"></div>
             <div class="about-description">
-                <p>TEST
+                <p>Welcome to my online portfolio! My name is Carlos Borrega and I am a recently graduated front-end web developer equipped with a
+                    robust foundation acquired through an intensive bootcamp. During this program, I
+                    successfully balanced my coursework with professional commitments, showcasing my ability to learn
+                    swiftly and my unwavering dedication to continuous improvement.
                 </p>
-                <button>Download my Resume</button>
+                <p>My journey in retail management has significantly honed my communication and team-building skills,
+                    emphasizing my creative problem-solving abilities and adaptability to change. I am detail-oriented
+                    and highly motivated, taking immense satisfaction in crafting efficient and responsive websites
+                    through meticulous coding.</p>
+                <p>Eager to contribute my diverse skill set to dynamic development projects, I bring a unique blend of
+                    technical proficiency and interpersonal skills. My commitment to excellence is unwavering, and I am
+                    ready to embark on exciting opportunities that allow me to showcase my passion for web development
+                    and contribute meaningfully to innovative projects.</p>
+                <button>Download My Resume</button>
             </div>
         </div>
     </section>
 
     <section id="skills">
         <h3>MY SKILLS</h3>
-        <div class="skills-list">
+        <div data-aos="fade-up" class="skills-list">
             <div class="html">
                 <i class="fa-brands fa-html5 icon"></i>
                 <h4>HTML5</h4>
@@ -77,11 +88,12 @@
         <div class="main-projects">
             <h3>MY PROJECTS</h3>
             <div class="projects-list">
-                <div class="project-a">
+                <div data-aos="fade-up" class="project-a">
                     <div class="project-a-image">
                         <img src="/images/project.jpg" alt="">
                     </div>
                     <div class="project-a-info">
+                        <h4>PROJECT NAME</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat explicabo. Nemo
                             debitis, eaque unde aut necessitatibus excepturi, recusandae soluta blanditiis, tempora
                             consequatur id impedit corporis dolorem repudiandae doloremque nisi?</p>
@@ -91,8 +103,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-b">
+                <div data-aos="fade-up" data-aos-delay="600" class="project-b">
                     <div class="project-b-info">
+                        <h4>PROJECT NAME</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat explicabo. Nemo
+                            debitis, eaque unde aut necessitatibus excepturi, recusandae soluta blanditiis, tempora
+                            consequatur id impedit corporis dolorem repudiandae doloremque nisi?</p>
+                        <div class="project-b-links">
+                            <a href="">Github →</a>
+                            <a href="">Live Site →</a>
+                        </div>
+                    </div>
+                    <div class="project-b-image">
+                        <img src="/images/project.jpg" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="project-a">
+                    <div class="project-a-image">
+                        <img src="/images/project.jpg" alt="">
+                    </div>
+                    <div class="project-a-info">
+                        <h4>PROJECT NAME</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat explicabo. Nemo
+                            debitis, eaque unde aut necessitatibus excepturi, recusandae soluta blanditiis, tempora
+                            consequatur id impedit corporis dolorem repudiandae doloremque nisi?</p>
+                        <div class="project-a-links">
+                            <a href="">Github →</a>
+                            <a href="">Live Site →</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="600" class="project-b">
+                    <div class="project-b-info">
+                        <h4>PROJECT NAME</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat explicabo. Nemo
                             debitis, eaque unde aut necessitatibus excepturi, recusandae soluta blanditiis, tempora
                             consequatur id impedit corporis dolorem repudiandae doloremque nisi?</p>
@@ -109,25 +152,23 @@
         </div>
     </section>
 
-    <section id="contacts">
-        <h3>CONTACTS</h3>
-        <div class="links">
-            <a id="email" name="c.borrega@proton.me" href="#contact">E-mail</a>
+    <section id="contact">
+        <h3>CONTACT</h3>
+        <div data-aos="fade-up" class="links">
+            <a class="email" href="mailto:c.borrega@proton.me"></a>
             <a href="https://www.linkedin.com/in/carlosborrega/">LinkedIn</a>
             <a href="https://github.com/borregaio">Github</a>
         </div>
-
-        <div class="last-info">
-            <a href="#" class="arrow"><i class="fa-solid fa-circle-arrow-up"></i></a>
-            <!-- <div class="copyright"> -->
-            <h4>© Carlos Borrega 2024</h4>
-            <!-- </div> -->
-            <!-- <div class="email">
-                <h4>c.borrega@proton.me</h4>
-            </div> -->
-        </div>
-
     </section>
+    <footer>
+        <a href="#" class="arrow"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        <!-- <div class="copyright"> -->
+        <h4>© CARLOS BORREGA 2024</h4>
+        <!-- </div> -->
+        <!-- <div class="email">
+            <h4>c.borrega@proton.me</h4>
+        </div> -->
+    </footer>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bb8d2ebf9e.js" crossorigin="anonymous"></script>
     <!-- AOS Library -->
