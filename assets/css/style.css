@@ -53,7 +53,7 @@ p {
     color: var(--white);
 }
 
-section {
+#home, #about, #skills, #projects, #contact {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,9 +66,9 @@ section {
 }
 
 #contact {
-    width: 100%;
+    /* width: 100%; */
     height: 80vh;
-    min-height: 100%;
+    /* min-height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,10 +168,10 @@ nav a {
 
 /* Home */
 
-#home {
+/* #home {
     display: flex;
     justify-content: center;
-}
+} */
 
 /* #home img {
     width: 100%;
@@ -190,7 +190,7 @@ nav a {
 
 .headings h2 {
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 3px;
 }
 
@@ -231,9 +231,9 @@ nav a {
     background-color: var(--white);
     border-radius: 0 25px 25px 0;
     padding: 70px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .about-description p {
@@ -470,7 +470,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20vh;
+    min-height: 20vh;
 }
 
 footer h4 {
@@ -554,11 +554,11 @@ footer h4 {
     }
 
     .headings h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .headings h3 {
-        font-size: 15px;
+        font-size: 16px;
         padding: 0 50px;
         line-height: 1.5rem;
     }
@@ -595,13 +595,16 @@ footer h4 {
         opacity: 1;
     } */
 
-    #about {
+    /* #about {
         height: 100%;
-    }
+    } */
+
+
+
 
     .about-info {
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
     }
 
     .about-image {
@@ -610,6 +613,8 @@ footer h4 {
 
     .about-description {
         border-radius: 0 0 25px 25px;
+        padding: 30px;
+        height: fit-content;
     }
 
     /* #skills {
@@ -625,9 +630,10 @@ footer h4 {
         justify-content: start;
     } */
 
-    #skills {
-        height: 100vh;
-    }
+    /* #skills {
+        margin-top: 400px;
+    } */
+
 
     #skills h4 {
         font-size: 16px;
@@ -723,6 +729,11 @@ footer h4 {
     .email:hover::before {
         content: "E-mail";
     }
+
+    .email:hover {
+        content: "E-mail";
+    }
+
 
 
     .links {
