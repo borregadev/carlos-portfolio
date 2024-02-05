@@ -580,7 +580,7 @@ footer h4 {
     }
 
     .headings h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .headings h3 {
@@ -656,8 +656,13 @@ footer h4 {
         height: fit-content;
     } */
 
+    #about {
+        height: fit-content;
+    }
+
     .about-info {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         margin: 0 20px;
     }
 
@@ -711,7 +716,7 @@ footer h4 {
     }
 
     .project-a {
-        height: 800px;
+        height: 500px;
         grid-template-columns: 100%;
         grid-template-areas: "paImage"
             "paInfo";
@@ -743,7 +748,7 @@ footer h4 {
 
 
     .project-b {
-        height: 800px;
+        height: 500px;
         grid-template-columns: 100%;
         grid-template-areas: "pbImage"
             "pbInfo";
