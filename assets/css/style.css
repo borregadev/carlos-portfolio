@@ -165,6 +165,10 @@ nav a {
     font-size: 30px;
 }
 
+/* .hide {
+    display: none;
+} */
+
 
 /* Home */
 
@@ -251,8 +255,8 @@ nav a {
     background-image: url(../images/profile.jpg);
     height: 100%;
     border-radius: 25px 0 0 25px; */
-    /* align-items: center; */
-    /* height: 100%; */
+/* align-items: center; */
+/* height: 100%; */
 /* }
 
 .about-description {
@@ -546,9 +550,71 @@ footer h4 {
         top: 30px;
     }
 
+span {
+    display: none;
+}
+
     .hide {
         display: none;
     }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        /* background-color: var(--bgdark); */
+        /* Fallback color */
+        background-color: var(--bgdark);
+        opacity: 0.9;
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        /* background-color: #fefefe; */
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        /* border: 1px solid #888; */
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+
+        display: grid;
+        height: 80vh;
+        text-align: center;
+        align-items: end;
+    }
+
+    .modal-content a {
+        font-size: 30px;
+    }
+
+    /* The Close Button */
+    /* .close {
+        color: var(--white);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    } */
+
+    /* .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    } */
 
     /* #home { */
     /* align-items: start; */
@@ -602,22 +668,21 @@ footer h4 {
         transition: opacity 0.5s ease-in-out;
     } */
 
-    /* .menu-icon {
+    .menu-icon {
         display: block;
+        position: absolute;
         cursor: pointer;
-        margin-bottom: 20px;
-        margin-right: 50px;
-
-    } */
+    }
 
     /* .menu-items.show,
     .menu-items.hide {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-    }
+        align-items: center;
+        margin-top: 50px;
+    } */
 
-    .menu-items.show a {
+    /* .menu-items.show a {
         opacity: 1;
     } */
 
@@ -671,10 +736,12 @@ footer h4 {
         border-radius: 25px 25px 0 0;
     }
 
-    .about-decription {
-        display: flex;
+    .about-description {
+        /* display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; */
+        padding: 30px;
+
     }
 
 

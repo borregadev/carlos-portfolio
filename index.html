@@ -13,15 +13,26 @@
 <body>
 
     <nav data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1500" data-aos-offset="0">
-        <!-- <div class="menu-icon" onclick="toggleMenu()">☰</div> -->
+        <div id="myBtn" class="menu-icon" onclick="toggleMenu()"><span class="close">&times;</span>☰</div>
         <div class="menu-items hide">
-            <!-- remove link class -->
-            <a class="link" href="#about">ABOUT</a>
-            <a class="link" href="#skills">SKILLS</a>
-            <a class="link" href="#projects">PROJECTS</a>
-            <a class="link" href="#contact">CONTACT</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
         </div>
     </nav>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal hide show">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- <span class="close">&times;</span> -->
+            <a class="modal-link" href="#about">ABOUT</a>
+            <a class="modal-link" href="#skills">SKILLS</a>
+            <a class="modal-link" href="#projects">PROJECTS</a>
+            <a class="modal-link" href="#contact">CONTACT</a>
+        </div>
+    </div>
 
     <section id="home">
         <!-- <img src="./images/computer.png" alt="Computer"> -->
@@ -36,9 +47,15 @@
         <div class="about-info">
             <img src="./assets/images/profile.jpg" alt="">
             <div class="about-description">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolor recusandae corrupti ab temporibus cum officiis facere consectetur nemo? Unde porro nulla laboriosam. Perferendis autem facere a accusantium et magni?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fuga voluptates eum placeat debitis nostrum harum quod repellat qui cum maiores sapiente eligendi deleniti doloribus numquam asperiores alias. Facilis, fugiat!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, distinctio fugit quibusdam culpa reprehenderit illo est asperiores. Dicta cupiditate quisquam tenetur excepturi! Sapiente laborum repellat temporibus perferendis voluptates, rem doloribus!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolor recusandae corrupti ab temporibus
+                    cum officiis facere consectetur nemo? Unde porro nulla laboriosam. Perferendis autem facere a
+                    accusantium et magni?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fuga voluptates eum placeat debitis
+                    nostrum harum quod repellat qui cum maiores sapiente eligendi deleniti doloribus numquam asperiores
+                    alias. Facilis, fugiat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, distinctio fugit quibusdam culpa
+                    reprehenderit illo est asperiores. Dicta cupiditate quisquam tenetur excepturi! Sapiente laborum
+                    repellat temporibus perferendis voluptates, rem doloribus!</p>
                 <button>Download my resume</button>
             </div>
 
