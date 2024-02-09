@@ -239,7 +239,8 @@ nav a {
 }
 
 .about-info img {
-    height: auto;
+    /* height: auto; */
+    width: 40%;
     border-radius: 25px 0 0 25px;
 }
 
@@ -417,13 +418,13 @@ button:hover {
 
 .project-a img {
     width: auto;
-    height: 220px;
+    height: 200px;
     border-radius: 25px 25px 0 0;
 }
 
 .project-b img {
     width: auto;
-    height: 220px;
+    height: 200px;
     border-radius: 25px 25px 0 0;
 }
 
@@ -995,7 +996,7 @@ footer h4 {
 }
 
 .project-a {
-    height: 500px;
+    height: auto;
     grid-template-columns: 100%;
     grid-template-areas: "paImage"
         "paInfo";
@@ -1027,7 +1028,7 @@ footer h4 {
 
 
 .project-b {
-    height: 500px;
+    height: auto;
     grid-template-columns: 100%;
     grid-template-areas: "pbImage"
         "pbInfo";
