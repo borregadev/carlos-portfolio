@@ -810,7 +810,7 @@ footer h4 {
     }
 
     .project-a {
-        height: 500px;
+        height: auto;
         grid-template-columns: 100%;
         grid-template-areas: "paImage"
             "paInfo";
@@ -842,7 +842,7 @@ footer h4 {
 
 
     .project-b {
-        height: 500px;
+        height: auto;
         grid-template-columns: 100%;
         grid-template-areas: "pbImage"
             "pbInfo";
