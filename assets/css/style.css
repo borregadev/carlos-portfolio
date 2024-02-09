@@ -157,7 +157,7 @@ nav {
 
 nav a {
     /* it was 50px before */
-    margin: 0 85px;
+    margin: 0 65px;
     transition: background-color 0.3s;
     letter-spacing: 1px;
     font-family: 'DM Sans', sans-serif;
@@ -192,19 +192,20 @@ nav a {
 
 .headings h1 {
     font-size: 100px;
-    margin-bottom: 40px;
-    letter-spacing: 5px;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
 }
 
 .headings h2 {
     font-size: 40px;
-    margin-bottom: 40px;
-    letter-spacing: 3px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .headings h3 {
     font-size: 20px;
     letter-spacing: 1px;
+    font-family: 'Roboto', ;
 }
 
 
@@ -532,13 +533,25 @@ footer h4 {
     content: "c.borrega@proton.me";
 }
 
-/* Tablets */
-@media only screen and (max-width: 768px) {}
+.linkedin::before {
+    content: "LinkedIn";
+}
 
+.linkedin:hover::before {
+    content: "carlosborrega";
+}
+
+.github::before {
+    content: "GitHub";
+}
+
+.github:hover::before {
+    content: "borregaio";
+}
 
 /* Mobile */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
 
     body {
@@ -644,9 +657,14 @@ footer h4 {
         display: inline;
     } */
 
+    .headings {
+        text-align: left;
+        padding: 0 80px;
+    }
+
     .headings h1 {
         font-size: 80px;
-        line-height: 6rem;
+        /* line-height: 6rem; */
     }
 
     .headings h2 {
@@ -655,8 +673,8 @@ footer h4 {
 
     .headings h3 {
         font-size: 16px;
-        padding: 0 50px;
-        line-height: 1.5rem;
+        /* padding: 0 50px; */
+        /* line-height: 1.5rem; */
     }
 
 
@@ -766,6 +784,8 @@ footer h4 {
         margin-top: 400px;
     } */
 
+    /* Skills */
+
 
     #skills h4 {
         font-size: 16px;
@@ -780,6 +800,8 @@ footer h4 {
     .icon {
         font-size: 60px;
     }
+
+    /* Projects */
 
     #projects {
         justify-content: start;
@@ -866,6 +888,22 @@ footer h4 {
         content: "E-mail";
     }
 
+    .linkedin:hover::before {
+        content: "LinkedIn";
+    }
+
+    .linkedin:hover {
+        content: "LinkedIn";
+    }
+
+    .github:hover::before {
+        content: "Github";
+    }
+
+    .github:hover {
+        content: "Github";
+    }
+
 
 
     .links {
@@ -881,5 +919,203 @@ footer h4 {
     .last-info {
         bottom: -40px;
     }
+
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+    nav a {
+        margin: 25px;
+    }
+
+    /* .headings {
+        padding: 20px;
+    } */
+
+    .headings h1 {
+        font-size: 70px;
+    }
+
+    .headings h2 {
+        font-size: 30px;
+    }
+
+    .headings h3 {
+        font-size: 20px;
+    }
+
+
+    #about {
+        height: fit-content;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+    }
+
+    .about-info img {
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .about-description {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        padding: 30px;
+
+    }
+
+/* skills */
+
+#skills h4 {
+    font-size: 16px;
+}
+
+.skills-list {
+    grid-template-areas: "html css"
+        "javascript node"
+        "react git";
+}
+
+.icon {
+    font-size: 80px;
+}
+
+/* projects */
+
+#projects {
+    justify-content: start;
+    height: 100%;
+}
+
+.project-a {
+    height: 500px;
+    grid-template-columns: 100%;
+    grid-template-areas: "paImage"
+        "paInfo";
+}
+
+.project-a-image {
+    display: block;
+    position: relative;
+    justify-content: start;
+    grid-area: auto;
+    justify-content: start;
+}
+
+.project-a img {
+    width: 100%;
+    height: auto;
+}
+
+.project-a-info {
+    display: block;
+    padding: 30px;
+}
+
+.project-a-info p {
+    margin: 0;
+}
+
+
+
+
+.project-b {
+    height: 500px;
+    grid-template-columns: 100%;
+    grid-template-areas: "pbImage"
+        "pbInfo";
+}
+
+.project-b-image {
+    display: block;
+    position: relative;
+    justify-content: start;
+    grid-area: auto;
+    justify-content: start;
+    order: -1;
+}
+
+.project-b img {
+    width: 100%;
+    height: auto;
+}
+
+.project-b-info {
+    display: block;
+    padding: 30px;
+}
+
+.project-b-info p {
+    margin: 0;
+}
+
+.project-b-links {
+    margin: 20px 0 0 0;
+}
+
+/* contact */
+
+
+
+
+.email:hover::before {
+    content: "E-mail";
+}
+
+.email:hover {
+    content: "E-mail";
+}
+
+.linkedin:hover::before {
+    content: "LinkedIn";
+}
+
+.linkedin:hover {
+    content: "LinkedIn";
+}
+
+.github:hover::before {
+    content: "Github";
+}
+
+.github:hover {
+    content: "Github";
+}
+
+
+
+.links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    padding: 20px 0;
+}
+
+.last-info {
+    bottom: -40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
