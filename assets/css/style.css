@@ -126,13 +126,13 @@ nav a {
 }
 
 .headings h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
 .headings h3 {
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1px;
 }
 
@@ -456,7 +456,7 @@ footer h4 {
     }
 
     .headings h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .headings h3 {
