@@ -134,6 +134,7 @@ nav a {
 .headings h3 {
     font-size: 30px;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
 
@@ -456,7 +457,7 @@ footer h4 {
     }
 
     .headings h2 {
-        font-size: 25px;
+        font-size: 29px;
     }
 
     .headings h3 {
