@@ -4,12 +4,12 @@
 
 /* Colours */
 
-
 :root {
-    --bgcolor1: rgb(36, 45, 57);
-    --bgcolor2: rgb(16, 37, 60);
+    --bgcolor1: rgba(32,38,57,1);
+    --bgcolor2: rgba(63,76,119,1);
+    --button: #738bda;
     --white: #faf9f6;
-    --black: #212427;
+    --black: #212121;
 }
 
 
@@ -28,8 +28,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     animation: gradient-animation 5s ease infinite;
-    /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
-    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background: rgb(32,38,57);
+    background: linear-gradient(180deg, rgba(32,38,57,1) 0%, rgba(63,76,119,1) 100%);
 
 }
 
@@ -147,7 +147,7 @@ nav a {
 }
 
 .about-info img {
-    width: 40%;
+    width: 30%;
     border-radius: 25px 0 0 25px;
 }
 
@@ -175,7 +175,7 @@ button {
     font-family: 'DM Sans', sans-serif;
     background-size: 200% auto;
     transition: 0.5s;
-    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+    background-image: linear-gradient(to right, var(--bgcolor1) 0%, var(--button) 51%, var(--bgcolor2) 100%);
 }
 
 button:hover {
