@@ -5,8 +5,8 @@
 /* Colours */
 
 :root {
-    --bgcolor1: rgba(32,38,57,1);
-    --bgcolor2: rgba(63,76,119,1);
+    --bgcolor1: rgba(32, 38, 57, 1);
+    --bgcolor2: rgba(63, 76, 119, 1);
     --button: #738bda;
     --white: #faf9f6;
     --black: #212121;
@@ -28,8 +28,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     animation: gradient-animation 5s ease infinite;
-    background: rgb(32,38,57);
-    background: linear-gradient(180deg, rgba(32,38,57,1) 0%, rgba(63,76,119,1) 100%);
+    background: rgb(32, 38, 57);
+    background: linear-gradient(180deg, rgba(32, 38, 57, 1) 0%, rgba(63, 76, 119, 1) 100%);
 
 }
 
@@ -174,13 +174,12 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
     cursor: pointer;
     font-family: 'DM Sans', sans-serif;
     background-size: 200% auto;
     transition: 0.5s;
     background-image: linear-gradient(to right, var(--bgcolor1) 0%, var(--button) 51%, var(--bgcolor2) 100%);
-    width: 30%;
 }
 
 button:hover {
@@ -751,5 +750,20 @@ footer h4 {
 
     .last-info {
         bottom: -40px;
+    }
+}
+
+/* Small laptops and desktops */
+
+@media only screen and (min-width: 1025px) and (max-width: 1335px) {
+
+    /* About section */
+
+    .about-description {
+        padding: 30px;
+    }
+
+    .about-description p {
+        font-size: 12px;
     }
 }
