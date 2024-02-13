@@ -148,12 +148,15 @@ nav a {
 }
 
 .about-info img {
-    width: 30%;
+    width: 35%;
     border-radius: 25px 0 0 25px;
 }
 
 .about-description {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-description p {
@@ -171,12 +174,13 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 20px 0 0 0 ;
     cursor: pointer;
     font-family: 'DM Sans', sans-serif;
     background-size: 200% auto;
     transition: 0.5s;
     background-image: linear-gradient(to right, var(--bgcolor1) 0%, var(--button) 51%, var(--bgcolor2) 100%);
+    width: 30%;
 }
 
 button:hover {
@@ -484,7 +488,10 @@ footer h4 {
 
     .about-description {
         padding: 30px;
+    }
 
+    button {
+        width: 50%;
     }
 
 
