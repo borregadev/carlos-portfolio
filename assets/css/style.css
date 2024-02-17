@@ -147,7 +147,7 @@ nav a {
 .about-info {
     display: flex;
     background-color: var(--white);
-    margin: 0 40px;
+    margin: 0 100px;
     border-radius: 25px;
 }
 
@@ -772,7 +772,7 @@ footer h4 {
     /* About section */
 
     .about-description {
-        padding: 30px;
+        padding: 20px;
     }
 
     .about-description p,
@@ -782,5 +782,9 @@ footer h4 {
 
     .project img {
         height: 190px;
+    }
+
+    button {
+        margin-top: 0;
     }
 }
