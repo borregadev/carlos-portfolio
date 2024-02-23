@@ -569,6 +569,10 @@ footer h4 {
         margin: 20px 0 0 0;
     }
 
+    .project-b-info h4 {
+        margin-left: 0;
+    }
+
 
     /* Contact section */
 
@@ -727,6 +731,10 @@ footer h4 {
         margin: 20px 0 0 0;
     }
 
+    .project-b-info h4 {
+        margin-left: 0;
+    }
+
 
     /* Contact section*/
 
@@ -787,6 +795,10 @@ footer h4 {
     .project img {
         height: 190px;
     }
+
+    /* .project-b-info h4 {
+        margin-left: 0;
+    } */
 
     button {
         margin-top: 0;
