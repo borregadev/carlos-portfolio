@@ -194,6 +194,21 @@ button:hover {
     font-weight: 400;
 }
 
+/* Applying additional style specifically for Firefox */
+@supports (-moz-appearance: none) {
+    .about-info img {
+        width: 80%;
+    }
+
+    .about-description {
+        padding: 20px;
+    }
+
+    .about-description p {
+        font-size: 16px;
+    }
+}
+
 
 /* Skills section*/
 
@@ -779,7 +794,7 @@ footer h4 {
 
 /* Small laptops and desktops */
 
-@media only screen and (min-width: 1025px) and (max-width: 1335px) {
+@media only screen and (min-width: 1024px) and (max-width: 1335px) {
 
     /* About section */
 
@@ -796,11 +811,15 @@ footer h4 {
         height: 190px;
     }
 
-    /* .project-b-info h4 {
-        margin-left: 0;
-    } */
-
     button {
         margin-top: 0;
+    }
+
+    /* Applying additional style specifically for Firefox */
+    @supports (-moz-appearance: none) {
+
+        .about-description p {
+            font-size: 12px;
+        }
     }
 }
